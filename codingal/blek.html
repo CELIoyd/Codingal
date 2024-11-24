@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>$IMP$ON</title>
+    </head>
+
+    <body>
+        <h2>JavaScript Array Sorting</h2>
+        <p>Click The button for free bobux</p>
+        
+        <button onclick="ascending()">10K bobux</button>
+        <button onclick="descending()">20K bobux</button>
+        
+        <p id="result"></p>
+    
+    <script>
+            var bobux = [40000, 50000, 60000, 70000, 80000];
+            document.getElementById("result").innerHTML = bobux;
+            
+            function ascending() {
+                bobux.sort(function(a, b){return a - b});
+                document.getElementById("result").innerHTML = bobux;
+            }
+
+            function descending() {
+                bobux.sort(function(a, b){return b - a});
+                document.getElementById(result).innerHTML = bobux;
+            }
+        </script>
+    </body>
+</html>

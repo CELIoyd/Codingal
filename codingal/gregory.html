@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gregory Bartholomew Poopypants Heffley</title>
+    </head>
+    <body>
+        <p>search for the string called bobux displaythe position and match and replace the word "When will you " with
+            "It's time to ".
+        </p>
+        <p id="search_result"></p>
+        <p id="replace_result"></p>
+        <p id="string_result"></p>
+
+        <script>
+            
+            //declaring variables
+            
+            var str = "When are you getting your Bobux";
+            var search_position = str.search("getting");
+            var txt = str.replace("bobux", "robux")
+            var x = 70;;
+            var y = 90;
+
+            //replacing the text
+
+            document.getElementById("search_result").innerHTML = search_position;
+            document.getElementById("replace_result").innerHTML = txt;
+
+
+
+            document.getElementById("string_result").innerHTML = String(x) + String(y);
+
+        </script>
+    </body>
+</html>
